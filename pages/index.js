@@ -3,7 +3,7 @@ import {useRouter} from 'next/router'
 let Home = ()=>{
     const router = useRouter();
     function submitHandler(){
-        router.push('/product')
+        router.push('/posts')
     }
     return(
         <div>
@@ -17,7 +17,7 @@ let Home = ()=>{
             </Link>
             <br/>
             <button onClick={submitHandler}>
-                Submit Order
+                View Post
             </button>
 
         </div>
