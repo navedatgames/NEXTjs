@@ -5,6 +5,9 @@ let Home = ()=>{
     function submitHandler(){
         router.push('/posts')
     }
+    function newssubmitHandler(){
+        router.push('/news')
+    }
     return(
         <div>
             <h1>Home Page</h1>
@@ -18,6 +21,10 @@ let Home = ()=>{
             <br/>
             <button onClick={submitHandler}>
                 View Post
+            </button>
+            <hr/>
+            <button onClick={newssubmitHandler}>
+                View News
             </button>
 
         </div>
